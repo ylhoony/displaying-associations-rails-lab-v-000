@@ -13,3 +13,7 @@
     </li>
   <% end %>
 </ul>
+
+<% @songs.each do |song| %>
+  <p><a href="<%= song_path(song) %>"><%=song.artist_name%>-<%= song.title %></a></p>
+<% end %>
